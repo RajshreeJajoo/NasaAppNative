@@ -45,16 +45,16 @@ const NasaLogin = ({ navigation }) => {
     return (
         <SafeAreaView >
             <Card style={styles.container}>
-                <View>
+                <View style={{marginTop:'1%'}}>
                     <Text style={styles.textStyle}>Nasa App</Text>
                     <TextInput style={styles.dataInput} placeholder='Enter id' value={id} keyboardType='numeric' onChangeText={(text) => setId(text)} />
                 </View>
                 <View style={styles.button}>
-                    <Button title='Random Id' onPress={onRandom} />
+                    <Button color='#9167F4' title='Random id' onPress={onRandom} />
                     <View style={styles.space} />
-                    <Button title='Sumbit Id' onPress={onSumbit} disabled={!id} />
+                    <Button color='#9167F4' title='Sumbit id' onPress={onSumbit} disabled={!id} />
                     <View style={styles.space} />
-                    <Button title='Reset Id' onPress={()=> setId('')} />
+                    <Button color='#9167F4' title='Reset id' onPress={()=> setId('')} />
                 </View>
             </Card>
         </SafeAreaView>
@@ -68,11 +68,15 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         margin: 20,
         padding: 80,
+        backgroundColor:'#E5DFF1'
     },
 
     textStyle: {
         textAlign: "center",
-        backgroundColor: '#ECF0F1',
+        fontWeight:'500',
+        fontSize:20
+        // marginTop:1
+        // backgroundColor: '#ECF0F1',
 
     },
     dataInput: {
@@ -86,7 +90,7 @@ const styles = StyleSheet.create({
     },
     button: {
         flexDirection: 'row',
-        paddingLeft: 15,
+        paddingLeft: 5,
         marginTop: 15
 
     }

@@ -28,15 +28,15 @@ const NasaDetails = ({ navigation }) => {
 
 const styles = StyleSheet.create({
     button: {
-        backgroundColor: 'yellow',
+        backgroundColor: '#9167F4',
         maxWidth: 100,
         margin: 10,
         padding: 10
     },
     container: {
-        margin: 30,
+        marginTop: '25%',
         alignItems: 'center',
-        backgroundColor: 'skyblue'
+        backgroundColor: '#E5DFF1'
     },
     details: {
         margin: 30,
